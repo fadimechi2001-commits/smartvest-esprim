@@ -17,3 +17,14 @@ Simulateur : Wokwi (projet « gilet », ESP32 DevKit)
 - Nombre de messages reçus (T5) : <à compléter> sur <durée> secondes
 - Fréquence observée des messages telemetry : <à compléter> (attendu : 1 toutes les 2 s)
 - Remarque : MQTT Explorer n'a pas reçu les messages. Le client web HiveMQ a été utilisé comme preuve de réception.
+# Smart Vest ESPRIM : simulation Wokwi et réception MQTT
+
+## Lancer la simulation
+1. Ouvrir le projet Wokwi « gilet » (ESP32 DevKit).
+2. Vérifier que `sketch/sketch.ino` contient les topics `esprim/smartvest/dupont/...`.
+3. Cliquer sur ▶ pour démarrer.
+
+## Dossiers
+- `wokwi/` : code, diagramme et bibliothèques
+- `data/` : captures de preuve des tests
+- `tests/` : tableau des résultats T1 à T5
