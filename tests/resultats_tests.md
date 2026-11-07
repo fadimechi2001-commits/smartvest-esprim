@@ -19,12 +19,15 @@ Simulateur : Wokwi (projet « gilet », ESP32 DevKit)
 - Remarque : MQTT Explorer n'a pas reçu les messages. Le client web HiveMQ a été utilisé comme preuve de réception.
 # Smart Vest ESPRIM : simulation Wokwi et réception MQTT
 
+# Smart Vest ESPRIM : simulation Wokwi et réception MQTT
+
 ## Lancer la simulation
 1. Ouvrir le projet Wokwi « gilet » (ESP32 DevKit).
-2. Vérifier que `sketch/sketch.ino` contient les topics `esprim/smartvest/dupont/...`.
-3. Cliquer sur ▶ pour démarrer.
+2. Vérifier que `wokwi/sketch/sketch.ino` utilise les topics `esprim/smartvest/dupont/...`.
+3. Cliquer sur ▶ pour démarrer la simulation.
+4. Suivre les messages sur le client web HiveMQ (`hivemq.com/demos/websocket-client`), abonnement `esprim/smartvest/#`.
 
-## Dossiers
-- `wokwi/` : code, diagramme et bibliothèques
-- `data/` : captures de preuve des tests
-- `tests/` : tableau des résultats T1 à T5
+## Structure du dépôt
+- `wokwi/` : code (`sketch/sketch.ino`), diagramme (`diagram.json`) et bibliothèques (`libraries.txt`)
+- `data/` : captures de preuve des tests T2 à T5
+- `tests/` : tableau des résultats (`resultats_tests.md`)
