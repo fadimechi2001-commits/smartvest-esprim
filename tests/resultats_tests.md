@@ -6,10 +6,10 @@ Simulateur : Wokwi (projet « gilet », ESP32 DevKit)
 
 | Test | Heure | Action | Résultat attendu | Résultat observé | Statut | Preuve |
 |---|---|---|---|---|---|---|
-| T1 | <HH:MM> | Démarrage | Wi-Fi et MQTT connectés | Wi-Fi connecté (IP 10.10.0.2), MQTT OK | Validé | moniteur série |
-| T2 | <HH:MM> | Potentiomètre au milieu, DHT22 à 37 °C | bpm ≈ 120, alert:false | <à compléter> | <à confirmer> | data/moniteur_T2_normal.png |
-| T3 | <HH:MM> | Potentiomètre à fond | bpm ≥ 140, pouls_eleve | bpm 179.2, ALERTE : pouls_eleve | Validé | data/moniteur_T3_pouls.png |
-| T4 | <HH:MM> | DHT22 à 40 °C | temp > 39,5, temperature_anormale | temp 40.00, ALERTE : temperature_anormale | Validé | data/moniteur_T4_temperature.png |
+| T1 | 15:21 | Démarrage | Wi-Fi et MQTT connectés | Wi-Fi connecté (IP 10.10.0.2), MQTT OK | Validé | moniteur série |
+| T2 | 15:22 | Potentiomètre au milieu, DHT22 à 37 °C | bpm ≈ 120, alert:false | <à compléter> | <à confirmer> | data/moniteur_T2_normal.png |
+| T3 | 15:22 | Potentiomètre à fond | bpm ≥ 140, pouls_eleve | bpm 179.2, ALERTE : pouls_eleve | Validé | data/moniteur_T3_pouls.png |
+| T4 | 15:23 | DHT22 à 40 °C | temp > 39,5, temperature_anormale | temp 40.00, ALERTE : temperature_anormale | Validé | data/moniteur_T4_temperature.png |
 | T5 | 15:24 | Réception côté cloud (client web HiveMQ) | Messages telemetry et alert reçus | telemetry et alert reçus sur esprim/smartvest/dupont/ | Validé | data/client_web_T5.png |
 
 ## Détails
