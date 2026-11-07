@@ -1,4 +1,5 @@
 import numpy as np
+np.random.seed(42)
 
 def lms_filter(d, x, n_taps=16, mu=0.005):
     """Filtre LMS : d = ECG bruité, x = référence IMU."""
