@@ -1,12 +1,12 @@
 import numpy as np
 np.random.seed(42)
 
-def lms_filter(d, x, n_taps=16, mu=0.005):
+def lms_filter(d, x, n_taps=16, mu=0.02):
     """Filtre LMS : d = ECG bruité, x = référence IMU."""
     w = np.zeros(n_taps)
     y_out = np.zeros(len(d))
     for n in range(n_taps, len(d)):
-        x_vec = x[n - n_taps:n][::-1]
+        x_vec = x[n - n_taps + 1:n + 1][::-1]
         y = np.dot(w, x_vec)
         e = d[n] - y
         w = w + 2 * mu * e * x_vec
